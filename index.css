@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nasa;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: nasa;
+    src: url(Nasalization\ Rg.otf);
+
+    font-family: Japa;
+    src: url(JapaneseEmperor.otf);
+}
+
+#main {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#top {
+    min-height: 60vh;
+    width: 100%;
+    background-image: url(https://w.wallhaven.cc/full/qz/wallhaven-qzx1wr.jpg);
+    background-size: cover;
+    background-position: center;
+    /* me 50% aur 60% dekar bhi mention kr skta hun */
+}
+
+#overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.099);
+
+}
+
+#text {
+    position: absolute;
+    width: 100%;
+    /* background-color: blueviolet; */
+    bottom: 0%;
+    padding: 0 53vw;
+    font-family: nasa;
+    color: transparent;
+    -webkit-text-stroke-color: whitesmoke;
+    -webkit-text-stroke-width: .1px;
+}
+
+#text h1 {
+    font-size: 8vw;
+    font-weight: 200;
+}
+
+#bottom {
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+}
+
+#bone {
+    width: 25%;
+    min-height: inherit;
+    /* background-color: blue; */
+    background-image: url(https://w.wallhaven.cc/full/ex/wallhaven-exk7pw.png);
+    background-size: 200%;
+    background-position: center;
+}
+
+#btwo {
+    width: 25%;
+    min-height: inherit;
+    /* background-color: rgb(106, 255, 0); */
+    background-image: url(wallhaven-l8mvwr.png);
+    background-position: 33% 13%;
+    background-size: 180vh;
+}
+
+#bthree {
+    width: 25%;
+    min-height: inherit;
+}
+
+#bthreetop {
+    min-height: 20vh;
+    width: 100%;
+    background-color: red;
+    padding: 40px;
+    color: aliceblue;
+
+
+}
+
+#bthreetop h4 {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+#bthreetop p {
+    font-size: 12px;
+    margin-top: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+#bthreebottom {
+    min-height: 20vh;
+    width: 100%;
+    background-color: orchid;
+    background-image: url(https://w.wallhaven.cc/full/o5/wallhaven-o5oxel.jpg);
+    background-position: 55% 45%;
+    background-size: cover;
+}
+
+#bfour {
+    width: 25%;
+    min-height: inherit;
+    background-color: rgb(255, 0, 195);
+    background-image: url(https://w.wallhaven.cc/full/85/wallhaven-85zooo.jpg);
+    /* background-position: right; */
+    background-size: cover;
+}
+
+#nav {
+    /* background-color: aliceblue; */
+    position: absolute;
+    width: 100vw;
+    left: 1%;
+    top: 1%;
+
+}
+
+#nav img {
+    height: 60px;
+
+}
+
+
+@media(max-width: 500px) {
+    #overlay #text {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    #overlay #text h1 {
+        width: initial;
+    }
+
+
+    #bottom {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    #bone {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    #btwo {
+        width: 100%;
+        min-height: 80vh;
+    }
+
+    #bthree {
+        width: 100%;
+    }
+
+    #bfour {
+        width: 100%;
+        min-height: 80vh;
+        left: 10%;
+        background-position-x: -30vh;
+    }
+}
